@@ -1,0 +1,121 @@
+:root {
+    --bg-c: rgb(214, 225, 225);
+    --white: white;
+    --bg-l: beige;
+    --bg-r: rgb(232, 232, 211);
+    --txt-c: #525252;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body {
+    background: var(--bg-c);
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--txt-c);
+    padding: 0 20px;
+}
+.profile {
+    background: var(--bg-l);
+}
+.profile img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 2rem;
+    margin-left: 3.4rem;
+}
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.resume {
+    width: 800px;
+    max-width: 100%;
+    height: auto;
+    background: var(--white);
+    margin: 50px auto;
+    display: flex;
+}
+.resume .resume_left {
+    width: 270px;
+}
+.resume .resume_left .left_sub {
+    padding: 35px;
+    text-align: center;
+}
+.resume .resume_left .left_sub .aboutme {
+    margin-bottom: 3rem;
+}
+.resume .resume_right {
+    width: calc(800px - 270px);
+    background: var(--bg-r);
+}
+.resume .resume_left .skills ul li,
+.resume .resume_left .skills ul li p:first-child {
+    display: flex;
+    align-items: center;
+}
+.resume .resume_left .skills ul li p:first-child {
+    width: 45px;
+    height: 45px;
+    background: var(--bg-l);
+    margin-right: 15px;
+    border-radius: 50%;
+    justify-content: center;
+}
+.resume .resume_left .skills ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.resume .resume_right .name {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    line-height: 116px;
+    text-align: center;
+    margin: 2.5rem;
+}
+
+.resume .resume_right .name .role {
+    font-size: 18px;
+    line-height: 24px;
+    
+}
+
+.resume .resume_right .info {
+    padding: 35px;
+    background: var(--white);
+    line-height: 5px;
+}
+.resume .resume_right .info ul {
+    display: flex;
+    justify-content: space-between;
+}
+.resume .resume_right .info ul p {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.resume .resume_right .right_sub {
+    padding: 35px;
+    padding-bottom: 0;
+}
+.resume .resume_right .right_sub ul li {
+    display: flex;
+    margin-bottom: 20px;
+}
+.resume .resume_right .right_sub ul li div:first-child {
+    width: 25%;
+    margin-right: 15px;
+}
+.resume .resume_right .right_sub ul li div:last-child {
+    width: 75%;
+}
+.resume .resume_right .right_sub ul li p:first-child {
+    font-size: 15px;
+}
